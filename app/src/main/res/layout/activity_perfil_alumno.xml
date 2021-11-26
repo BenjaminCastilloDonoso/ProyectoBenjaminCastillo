@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".perfilAlumno_act">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="113dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="355dp"
+        android:layout_height="591dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.26">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="256dp"
+            android:layout_height="31dp"
+            android:text="SECCIÓN ALUMNO"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="297dp"
+            android:layout_height="138dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.078" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="299dp"
+            android:layout_height="215dp"
+            android:layout_marginBottom="48dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView"
+            app:layout_constraintVertical_bias="0.946">
+
+            <Button
+                android:id="@+id/bClases"
+                android:layout_width="276dp"
+                android:layout_height="34dp"
+                android:onClick="AbrirClases"
+                android:text="CLASES GRABADAS"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.095" />
+
+            <Button
+                android:id="@+id/bCertificado"
+                android:layout_width="274dp"
+                android:layout_height="36dp"
+                android:onClick="AbrirCertificado"
+                android:text="CERTIFICADO ALUMNO REGULAR"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bClases"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bPromedio"
+                android:layout_width="274dp"
+                android:layout_height="35dp"
+                android:onClick="AbrirPromedio"
+                android:text="MIS PROMEDIOS"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bCertificado"
+                app:layout_constraintVertical_bias="0.032" />
+
+            <Button
+                android:id="@+id/bInfo"
+                android:layout_width="273dp"
+                android:layout_height="37dp"
+                android:onClick="AbrirInformacion"
+                android:text="INFORMACIÓN"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bPromedio"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bCerrar"
+                android:layout_width="275dp"
+                android:layout_height="33dp"
+                android:onClick="cerrar"
+                android:text="CERRAR SESIÓN"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bInfo"
+                app:layout_constraintVertical_bias="0.157" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="284dp"
+            android:layout_height="34dp"
+            android:text="PROTOCOLO INTERNO EN SALAS DE CLASES PARA FUNCIONARIOS Y ALUMNOS."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView"
+            app:layout_constraintVertical_bias="0.333" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

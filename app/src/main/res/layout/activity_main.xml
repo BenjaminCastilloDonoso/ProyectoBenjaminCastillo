@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="331dp"
+        android:layout_height="510dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="284dp"
+            android:layout_height="124dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.111">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingreso SuperAdmin"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/inputProfesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Ingrese usuario"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#F6F3F3"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/inputClaveProfesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:text="Ingrese Contraseña"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bIniciarProfesor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:foreground="@drawable/color_button"
+            android:foregroundGravity="fill_horizontal"
+            android:onClick="AbrirPerfilAdmin"
+            android:padding="10px"
+            android:shadowColor="#BF4646"
+            android:text="INICIAR SESIÓN"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textDirection="inherit"
+            app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.077"
+            app:rippleColor="#190F0F"
+            app:strokeColor="#4C3C3C" />
+
+        <Button
+            android:id="@+id/bSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/color_button"
+            android:foregroundGravity="fill_horizontal"
+            android:foregroundTint="@color/Button"
+            android:foregroundTintMode="src_in"
+            android:onClick="salir"
+            android:text="SALIR DE APLICACIÓN"
+            android:textAllCaps="true"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bIniciarProfesor"
+            app:layout_constraintVertical_bias="0.473" />
+
+        <Button
+            android:id="@+id/bVolver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="AbrirInputAlumnos"
+            android:text="INGRESO ALUMNOS"
+            app:layout_constraintBottom_toTopOf="@+id/bSalir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bIniciarProfesor"
+            app:layout_constraintVertical_bias="0.568" />
+
+        <ImageButton
+            android:id="@+id/bInstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bSalir"
+            app:layout_constraintVertical_bias="0.43"
+            app:srcCompat="@drawable/iconinstagram"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/bYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.191"
+            app:layout_constraintStart_toEndOf="@+id/bInstagram"
+            app:layout_constraintTop_toBottomOf="@+id/bSalir"
+            app:layout_constraintVertical_bias="0.43"
+            app:srcCompat="@drawable/youtubeico"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/bPagina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toEndOf="@+id/bYoutube"
+            app:layout_constraintTop_toBottomOf="@+id/bSalir"
+            app:layout_constraintVertical_bias="0.43"
+            app:srcCompat="@drawable/chrome"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="371dp"
+        android:layout_height="20dp"
+        android:text="Colegio Los Carrera, todos los derechos reservados 2021."
+        android:textColor="#FDFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="167dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

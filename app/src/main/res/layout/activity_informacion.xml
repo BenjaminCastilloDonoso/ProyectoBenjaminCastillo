@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".informacion_act">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="201dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="347dp"
+        android:layout_height="134dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.147">
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fundación Educacional Colegio Los Carrera"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rut 65154593-5"
+            android:textColor="#F8F6F6"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+56 572 761 151"
+            android:textColor="#F8F7F7"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+56 413 180 665"
+            android:textColor="#FFFCFC"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Santa Ester 856, San Miguel"
+            android:textColor="#FDFDFD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="info@colegioloscarrera.cl"
+            android:textColor="#FBFBFB"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/bDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.247"
+        app:srcCompat="@drawable/direccion" />
+
+    <ImageButton
+        android:id="@+id/bTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toEndOf="@+id/bDireccion"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.247"
+        app:srcCompat="@drawable/telefono" />
+
+    <Button
+        android:id="@+id/bVolver7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volveratras"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.531" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

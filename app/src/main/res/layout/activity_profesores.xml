@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".profesores_act">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="369dp"
+        android:layout_height="20dp"
+        android:text="Colegio Los Carrera, todos los derechos reservados 2021."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="124dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="333dp"
+        android:layout_height="445dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="284dp"
+            android:layout_height="124dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.111">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingreso Profesores"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/inputProfesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ingrese usuario"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#F6F3F3" />
+
+            <EditText
+                android:id="@+id/inputClaveProfesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Ingrese Contraseña"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bIniciarProfesor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:foreground="@drawable/color_button"
+            android:foregroundGravity="fill_horizontal"
+            android:onClick="IniciarProfesores"
+            android:padding="10px"
+            android:shadowColor="#BF4646"
+            android:text="INICIAR SESIÓN"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textDirection="inherit"
+            app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.163"
+            app:rippleColor="#190F0F"
+            app:strokeColor="#4C3C3C" />
+
+        <Button
+            android:id="@+id/bVolver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="VolverInicio"
+            android:text="VOLVER AL MENÚ PRINCIPAL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bIniciarProfesor"
+            app:layout_constraintVertical_bias="0.264" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
